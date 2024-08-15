@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Mighty Kind</title>
+    <meta name="description" content="Meet MiGHTY KIND, the world’s finest micro-infused botanical seltzers, available in a variety of delicious flavors & doses.">
+    <meta property="og:description" content="Meet MiGHTY KIND, the world’s finest micro-infused botanical seltzers, available in a variety of delicious flavors & doses.">
+    <meta property="twitter:description" content="Meet MiGHTY KIND, the world’s finest micro-infused botanical seltzers, available in a variety of delicious flavors & doses." data-rh="true">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    <style>
+        .section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .section-1 {
+            background-color: #8ddb63;
+            border-top: 10px solid white;
+            border-bottom: 10px solid white;
+            color: #004d5d;
+        }
+        .section-1 h2, .section-6 h2 {
+            font-size: 3rem;
+        }
+
+        .section-6 {
+            background-color: #8ddb63;
+            border-top: 15px solid #fee100;
+            color: #004d5d;
+        }
+
+        .header-image-section{
+            margin-top: -90px;
+            z-index: 1;
+        }
+        .cans-image-section{
+            background-color: #fee100;
+        }
+        .cans-image-section .cans-image {
+            margin-top: -200px;
+            z-index: 1;
+        }
+        .shop-now-section{
+            background-color: #fee100;
+
+        }
+
+
+        .content-container {
+
+            position: relative;
+            z-index: 2;
+            padding-top: 20px;
+            color: #004d5d;
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+
+        }
+
+        .background-container {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+        }
+
+        .background-container::before,
+        .background-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 20%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+
+        .background-container::before {
+            left: 0;
+            background-image: url('./images/KINDER-LEFT.png');
+        }
+
+        .background-container::after {
+            right: 0;
+            background-image: url('./images/KINDER-RIGHT.png');
+        }
+        .section-3 {
+            background-color: #dbf8fe;
+            z-index: 1;
+            margin-top: -110px;
+
+        }
+        .custom-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #004f60;
+            color: #8bb33c;
+            padding: 10px 20px;
+            border: 6px solid #ffffff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        .custom-button:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .button-wrapper {
+            text-align: center;
+
+        }
+
+        .button-icon {
+            max-width: 50px;
+            height: auto;
+            margin-left: 0;
+        }
+
+        .button-text {
+            margin-right: 5px;
+        }
+        .meet-mighty-kind{
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+        .welcome-to-kinder{
+            font-size: 7rem;
+        }
+        .why-mighty-kind{
+            color: #004d5a;
+            font-size: 7rem;
+        }
+        .review-meta p {
+            font-size: 1.3rem;
+        }
+
+        .flavor-section {
+            background-image: url('./images/FLAVORS-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 50px 0;
+            background-color: #fefccc;
+            /* min-height: 100vh;   */
+            border-top: 15px solid white;
+            min-height: 700px;
+
+
+        }
+
+        .text-box {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 20px 40px;
+            border: 2px solid #ffffff;
+            max-width: 80%;
+            margin: 7% auto 0 auto;
+            display: inline-block;
+        }
+
+        h1.flavor-text {
+            margin: 0;
+            font-size: 5rem;
+            color: #004f60;
+        }
+        .flavor2-section {
+            background-color: #fefccc;
+            padding-bottom: 250px;
+            padding-top: 25px;
+        }
+
+        .join-the-kindness{
+            color: #8c8c8c
+        }
+        .the-only-thing{
+            color: #8a8a88;
+        }
+
+        .custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-list li {
+            font-size: 2rem;
+            color: #8c8c8c;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .custom-list .bullet {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .custom-list .yellow {
+            background-color: #fee100;
+        }
+
+        .custom-list .purple {
+            background-color: #dfc0e9;
+        }
+
+        .custom-list .gray {
+            background-color: #8c8c8c;
+        }
+
+        .custom-list .green {
+            background-color: #8ddb63;
+        }
+
+        .custom-list .teal {
+            background-color: #41758d;
+        }
+
+        .senses-section{
+            background-color: #fff;
+            background-image: url('./images/ICONS-BACKGROUND.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding-top: 50px;
+
+        }
+
+        .senses-section .container {
+            padding-top: 100px;
+        }
+
+        .reviews-section {
+            background-color: #dbf8fe;
+        }
+
+        .reviews-title {
+            font-size: 6rem;
+            color: #004d5d;
+            margin-bottom: 40px;
+        }
+
+        .review-item {
+            margin-bottom: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            color: #3e7089;
+        }
+
+        .review-stars {
+            margin: 15px 0;
+            width: auto;
+            height: 40px;
+        }
+
+        p.reviewer-name {
+            font-size: 1.4rem;
+            color: #004d5d;
+        }
+
+        .disclaimer-section {
+            background-color: #004d5d;
+            padding: 40px 20px;
+            color: #ffffff;
+        }
+
+        .disclaimer-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+
+
+        @media (min-width: 768px) and (max-width: 1199.98px) {
+
+            .section {
+                padding: 20px 0;
+            }
+
+            h2{
+                font-size: 1.2rem;
+            }
+            .section-1 h2, .section-6 h2 {
+                font-size: 1.6rem;
+            }
+
+            .header-image-section {
+                margin-top: -45px;
+            }
+            .cans-image-section .cans-image {
+                margin-top: -75px;
+                z-index: 1;
+            }
+
+            .section-3 {
+                margin-top: -55px;
+            }
+
+            .welcome-to-kinder{
+                font-size: 2.5rem;
+                color:green;
+            }
+            h3.meet-mighty-kind {
+                padding-left: 3%;
+                padding-right: 3%;
+                font-size: 1.5rem;
+            }
+
+            .why-mighty-kind{
+                font-size: 3rem;
+            }
+
+
+            .background-container::before,
+            .background-container::after {
+                width: 35%;
+                background-size: contain;
+            }
+
+            .custom-button{
+                font-size: 1.5rem;
+            }
+            .custom-list li {
+                font-size: 1.5rem;
+            }
+            .custom-list .bullet {
+                width: 15px;
+                height: 15px;
+            }
+            .button-icon {
+                max-width: 25px;
+            }
+            .flavor-section {
+                padding: 20px 0;
+                border-top: 5px solid white;
+                background-size: cover;
+                min-height: auto;
+            }
+            .text-box {
+                margin: 4% auto 0 auto;
+                padding: 5px 10px;
+
+            }
+            h1.flavor-text {
+                font-size: 1.4rem;
+            }
+            .flavor2-section {
+                padding-top: 25px;
+                padding-bottom: 95px;
+            }
+            .flavor2-section h2{
+                font-size: 1.2rem;
+            }
+            .flavor2-section h3{
+                font-size: 1rem;
+            }
+            .senses-section{
+                padding-top: 0;
+            }
+            .senses-section .container{
+                padding-top: 50px;
+            }
+            .review-meta p {
+                font-size: 1.1rem;
+            }
+            p.reviewer-name {
+                font-size: 1.2rem;
+            }
+            .reviews-title {
+                font-size: 5rem;
+            }
+
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .section {
+                padding: 20px 0;
+            }
+
+            h2{
+                font-size: 1.2rem;
+            }
+
+            .section-1 h2, .section-6 h2 {
+                font-size: 1.2rem;
+            }
+
+            .header-image-section {
+                margin-top: -30px;
+            }
+            .cans-image-section .cans-image {
+                margin-top: -35px;
+                z-index: 1;
+            }
+
+            .section-3 {
+                margin-top: -25px;
+            }
+
+            .welcome-to-kinder{
+                font-size: 2.5rem;
+                color:green;
+            }
+            h3.meet-mighty-kind {
+                padding-left: 3%;
+                padding-right: 3%;
+                font-size: 1.5rem;
+            }
+
+            .why-mighty-kind{
+                font-size: 2rem;
+            }
+
+                .background-container::before,
+            .background-container::after {
+                width: 35%;
+                background-size: contain;
+            }
+
+            .custom-button{
+                font-size: 1.5rem;
+            }
+            .custom-list li {
+                font-size: 1.1rem;
+            }
+            .custom-list .bullet {
+                width: 15px;
+                height: 15px;
+            }
+            .button-icon {
+                max-width: 25px;
+            }
+            .flavor-section {
+                padding: 20px 0;
+                border-top: 5px solid white;
+                background-size: cover;
+                min-height: auto;
+            }
+            .text-box {
+                margin: 4% auto 0 auto;
+                padding: 5px 10px;
+
+            }
+            h1.flavor-text {
+                font-size: 1.4rem;
+            }
+            .flavor2-section {
+                padding-top: 25px;
+                padding-bottom: 50px;
+            }
+            .flavor2-section h2{
+                font-size: 1.2rem;
+            }
+            .flavor2-section h3{
+                font-size: 1rem;
+            }
+            .senses-section{
+                padding-top: 0;
+            }
+            .senses-section .container{
+                padding-top: 40px;
+            }
+            .review-meta p {
+                font-size: 1.1rem;
+            }
+            p.reviewer-name {
+                font-size: 1.2rem;
+            }
+            .reviews-title {
+                font-size: 3rem;
+            }
+
+        }
+
+        /* FONTS */
+        .fjalla-one-regular {
+            font-family: "Fjalla One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .rubik-reg {
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .rubik-med {
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'SpidroMarley-Regular';
+            src: url('fonts/SpidroMarley-Regular.woff2') format('woff2');
+        }
+
+        .spidro-marley {
+            font-family: 'SpidroMarley-Regular', sans-serif;
+        }
+
+        .w-glyph::before {
+            content: '\E030';
+        }
+
+
+</style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+
+        <section class="section section-1 fjalla-one-regular">
+            <h2>New Customers Get 15% Off with Code BMK15</h2>
+            <h2>FREE Shipping on ALL Orders Over $90</h2>
+        </section>
+
+        <section class="header-image-section">
+                <img src="./images/HEADER-Site-2.png" alt="Drink Mighty Kind" class="img-fluid header-image">
+        </section>
+
+        <section class="section section-3">
+            <div class="container-fluid background-container">
+                <div class="content-container">
+                    <h1 class="welcome-to-kinder spidro-marley">&#xE030;elcome to a &#xE024inder World</h1>
+                    <h3 class="meet-mighty-kind rubik-reg">Meet MiGHTY KIND, the world’s finest micro-infused botanical seltzers, available in a variety of delicious flavors & doses.</h3>
+                    <div class="button-wrapper">
+                        <a href="http://bemightykind.com/" class="custom-button">
+                            <span class="button-text rubik-med">LEARN MORE</span>
+                            <img src="./images/BUTTON-LEARN MORE.png" alt="Heart" class="button-icon">
+                        </a>
+                    </div>
+                    <div class="pb-5">
+                        <img src="./images/KINDER-BOTTOM.png" alt="Kinder bottom" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flavor-section fjalla-one-regular">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <div class="text-box">
+                            <h1 class="flavor-text">Delicious, Refreshing Flavors</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flavor2-section">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <h2 class="rubik-med join-the-kindness">Join the kindness movement with MiGHTY KIND!</h2>
+
+                        <h3 class="rubik-reg the-only-thing">The only thing you’ll taste in our botanical seltzers is our all-natural, delicious flavors.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="cans-image-section px-3">
+        <img src="./images/CANS.png" alt="Cans" class="img-fluid cans-image">
+    </section>
+    <section class="shop-now-section px-3 pt-sm-4 pt-2 pb-sm-5 pb-4">
+
+        <div class="button-wrapper">
+            <a href="http://bemightykind.com/" class="custom-button">
+                <span class="button-text rubik-med">SHOP NOW</span>
+                <img src="./images/BUTTON-SHOP NOW.png" alt="Shop Now" class="button-icon">
+            </a>
+        </div>
+    </section>
+    <div class="container my-3 my-sm-5">
+        <h2 class="text-center fjalla-one-regular why-mighty-kind">Why MiGHTY KIND?</h2>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 offset-sm-2">
+                <ul class="custom-list rubik-med">
+                    <li><span class="bullet yellow"></span>Provides a light buzz</li>
+                    <li><span class="bullet purple"></span>Zero alcohol & hangover free</li>
+                    <li><span class="bullet gray"></span>Doses from 5mg to 20mg per can</li>
+                    <li><span class="bullet green"></span>Sugar free & calorie free</li>
+                    <li><span class="bullet teal"></span>Legal to ship to your doorstep!</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="senses-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                            <div class="col-6 p-4 text-center"><img src="./images/ICON-ALL NATURAL.png" alt="All Natural" class="img-fluid"></div>
+                            <div class="col-6 p-4 text-center"><img src="./images/ICON-VEGAN.png" alt="Vegan" class="img-fluid"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 p-4 text-center"><img src="./images/ICON-AFTERTASE.png" alt="No aftertaste" class="img-fluid"></div>
+                        <div class="col-6 p-4 text-center"><img src="./images/ICON-INFUSED.png" alt="Infused" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid reviews-section">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="reviews-title pt-3 spidro-marley">&#xE011;eviews</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 review-item">
+                <div class="review-meta text-right">
+                    <p class="rubik-reg">"I've tried a couple different brands of hemp-derived seltzers, as well as the "real" stuff. The flavors from Mighty Kind are delicious with no weird flavor. I can't wait to see what they come up with next!"</p>
+                    <img src="./images/ICON-5 STARS.png" alt="5 Stars" class="review-stars">
+                    <p class="reviewer-name rubik-med">- Steven - 5 STARS</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 review-item">
+                <div class="review-meta text-right">
+                    <p class="rubik-reg">"10/10 experience. The drinks taste good and give me the feeling I'm looking for. I look forward to buying these again!"</p>
+                    <img src="./images/ICON-5 STARS.png" alt="5 Stars" class="review-stars">
+                    <p class="reviewer-name rubik-med">- Kimberly - 5 STARS</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 review-item">
+                <div class="review-meta text-right">
+                    <p class="rubik-reg">"These are wonderful seltzers that work quickly and are absolutely delicious. The best part of my day is cracking one open to relax and unwind!"</p>
+                    <img src="./images/ICON-5 STARS.png" alt="5 Stars" class="review-stars">
+                    <p class="reviewer-name rubik-med">- John - 5 STARS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section section-6 fjalla-one-regular">
+        <h2>New Customers Get 15% Off with Code BMK15</h2>
+        <h2>FREE Shipping on ALL Orders Over $90</h2>
+    </section>
+    <section class="shop-now-section px-3 pt-sm-4 pt-2 pb-sm-5 pb-4">
+
+        <div class="button-wrapper">
+            <a href="http://bemightykind.com/" class="custom-button">
+                <span class="button-text">SHOP NOW</span>
+                <img src="./images/BUTTON-SHOP NOW.png" alt="Heart" class="button-icon">
+            </a>
+        </div>
+    </section>
+
+    <div class="container-fluid disclaimer-section rubik-reg">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">
+                <p class="disclaimer-text">
+                    The products displayed are hemp-derived cannabinoid products that comply with the federal legal limit containing less than 0.3% Delta-9 tetrahydrocannabinol as defined by the United States 2018 Farm Bill. The statements made regarding these products have not been evaluated by the Food and Drug Administration (FDA). The efficacy of these products has not been confirmed by FDA-approved research. These products are not intended to nor claim to diagnose, treat, cure, or prevent any disease.
+                </p>
+                <p class="disclaimer-text">
+                    Must be 21+ to purchase. The legality of these products may vary by state. It is the responsibility of the consumer to comply with local regulations regarding the use of these products.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
